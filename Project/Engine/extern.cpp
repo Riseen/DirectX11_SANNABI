@@ -1,0 +1,43 @@
+#include "pch.h"
+#include "global.h"
+
+tTransform g_Transform = {};
+tGlobalData g_global = {};
+
+
+const char* ASSET_TYPE_STRING[(UINT)ASSET_TYPE::END]
+{
+	"MESH",
+	"MESHDATA",
+	"PREFAB",
+	"TEXTURE",
+	"MATERIAL",
+	"SOUND",
+	"COMPUTE_SHADER",
+	"GRAPHICS_SHADER",
+	"FSM",
+};
+
+
+extern const char* COMPONENT_TYPE_STRING[(UINT)COMPONENT_TYPE::END]
+{
+	"TRANSFORM",
+	"COLLIDER2D",
+	"COLLIDER3D",
+	"ANIMATOR2D",
+	"ANIMATOR3D",
+	"LIGHT2D",
+	"LIGHT3D",
+	"CAMERA",
+	"STATEMACHINE",
+	"MESHRENDER",
+	"TILEMAP",
+	"PARTICLESYSTEM",
+	"SKYBOX",
+	"DECAL",
+	"LANDSCAPE",
+	"RIGIDBODY",
+	"GRAVITY",
+};
+
+
